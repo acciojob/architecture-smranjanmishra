@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            width: 1100px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .imageContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .column1, .column3 {
+            width: 200px;
+        }
+
+        .column2 {
+            width: 600px;
+        }
+
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-content {
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Main content container -->
+    <div class="content">
+        <!-- Image container -->
+        <div class="imageContainer">
+            <img src="path/to/your/image1.jpg" alt="Main Image">
+        </div>
 
+        <!-- Table structure -->
+        <table>
+            <tr>
+                <td class="column1">
+                    <img src="path/to/your/image2.jpg" alt="Image 1" class="content-image">
+                </td>
+                <td class="column2 text-content">
+                    <p>This is the text content for the first row's middle column. Provide architectural details here.</p>
+                </td>
+                <td class="column3">
+                    <img src="path/to/your/image3.jpg" alt="Image 2" class="content-image">
+                </td>
+            </tr>
+            <tr>
+                <td class="column1">
+                    <img src="path/to/your/image4.jpg" alt="Image 3" class="content-image">
+                </td>
+                <td class="column2 text-content">
+                    <p>This is the text content for the second row's middle column. Provide more architectural details here.</p>
+                </td>
+                <td class="column3">
+                    <img src="path/to/your/image5.jpg" alt="Image 4" class="content-image">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
